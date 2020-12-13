@@ -12,5 +12,7 @@ class Var {
         for(var i=0;i<name.Length;i++){
             Console.WriteLine(f[i]);
         }
+        
+        Console.WriteLine("nameの型は{0},fの型は{1}",name.GetType(),f.GetType());
     }
 }
