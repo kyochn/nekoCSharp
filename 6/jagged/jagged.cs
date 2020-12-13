@@ -4,20 +4,15 @@ class Array
 {
     public static void Main()
     {
-        int[][] ar;
-        ar=new int[2][];
-        ar[0]=new int[3];
-        ar[1]=new int[3];
+        string[][] name=new string[2][];
+        name[0]=new string[2]{"田中","工藤"};
+        name[1]=new string[3]{"吉田","佐藤","池田"};
 
-        for(int i=0;i<2;i++){
-            for(int j=0;j<3;j++){
-                ar[i][j]=(i+1)*(j+1);
-            }
+        for(int i=0;i<name[0].Length;i++){
+            Console.WriteLine(name[0][i]);
         }
-        for(int i=0;i<2;i++){
-            for(int j=0;j<3;j++){
-                Console.WriteLine("ar[{0}][{1}]={2}",i,j,ar[i][j]);
-            }
+        for(int i=0;i<name[1].Length;i++){
+            Console.WriteLine(name[1][i]);
         }
     }
 }
